@@ -11,10 +11,10 @@ import java.util.Random; // lets us use the random class
 //you import the Scanner Class!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 import java.util.Scanner; // last word is the the Class
 
-
+//util is a package
+//Scanner and Random are classes.
 
 import java.util.*;  // let me use any class in the package
-
 //import java.text.*;
 
 import java.text.NumberFormat;
@@ -23,10 +23,10 @@ import java.text.DecimalFormat;
 
 
 public class ch2notes5 {   
-       enum Flavor {chocolate, strawberry, mitChocolateChip, razberry}
+    enum Flavor {chocolate, strawberry, mitChocolateChip, razberry}
 
     public static void main (String[] args) {
-        //Scanner scan = new Scanner (System.in);
+        Scanner scan = new Scanner (System.in);
         Scanner Keyboard = new Scanner(System.in);
     
         //Flavor cone = Flavor.razberry;
@@ -38,34 +38,37 @@ public class ch2notes5 {
             double num = 5, num1 = 23.89765, num2 = 3.4;
             char letter = 'd'; //is the same as an int only time to use sinlge quotes
             boolean choice = false;
-            float num5 = 3.14f;
+            float num5 = 3.14f; //must have f
     
             //These are Objects
             Integer number = new Integer(47); // evey basic data type has a wrapper class
            
             /*Start with a letter or _
              * Have numbers Cannote have symbols except $
-             * 40 character
+             * a lot of character (more than 40)
              * must have new
              * Class id    must have  constructor(data, may be optional)
-             * name        new        has tehe same name as the class
+             * name        new        has the same name as the class
              */
            
             String myname = new String("Kevin Hayes");
-            Integer n2 = 7;//Auto Boxing
+            //Integer n2 = 7;//Auto Boxing
     /**/
             String word = new String("Homer Simpson");
             String word2 = new String("Homer Simpson");
             String word3 = new String("Bart Simpson");
             String name = new String("Mike");
-            String last = "Hayes"; // string dosnt need new
+            String last = "Hayes"; // string dosnt need new, String is special
     
-    
+            System.out.println(word.length());
+            System.out.println("The name is " + name);
     /*
             System.out.printf("Name:  %s \t ID: %5d \n", name,id);
-            System.out.println( 'a' + 100 );
+            System.out.println( 'a' + 100 ); //97 + 100 = 197, ASCII "a" = 97 chars are ints
             System.out.println('a'   );
             System.out.println("A"+100  );
+            System.out.println("The add is : " + 7 + 5); //prints The add is : 75
+            System.out.println(7 + 5 + "is the add"); //prints 12 is the add
     
     //      System.out.printf(  );
     
@@ -84,23 +87,25 @@ public class ch2notes5 {
     
             NumberFormat money = NumberFormat.getCurrencyInstance();
             NumberFormat percent = NumberFormat.getPercentInstance();
-            DecimalFormat fmt =new DecimalFormat("0.###");
-            DecimalFormat fmt2= new DecimalFormat("0.00");// ## vs 00
+            DecimalFormat fmt = new DecimalFormat("0.###");//<-- this is constructor ## max decimal spaces, rounds, and floadting decimal pt
+            DecimalFormat fmt2= new DecimalFormat("0.00");//  .00 pads with 0s, rounds ## vs 00
             
     
-            System.out.println( "Sub Total: " + money.format(num1) );
-            System.out.println( "Sub Total: " + percent.format(num1) );
-            System.out.println( "Sub Total: " + fmt.format(num1) );
-            System.out.println( "Sub Total: " + fmt2.format(num2) );
-    
+            System.out.println( "Sub Total: " + money.format(num1) );// prints $23.90
+            System.out.println( "Sub Total: " + percent.format(.5) ); //pirnts 50%
+            System.out.println( "Sub Total: " + fmt.format(num1) ); //prints 23.898
+            System.out.println( "Sub Total: " + fmt2.format(num2) ); //prints 3.40
+            System.out.println( "Sub Total: " + fmt.format(num2) ); //prints 3.4
+            System.out.println( "Sub Total: " + fmt2.format(num1) ); //prints 23.90
+            
     
     // page 90 Why do we get this Error???
-    /*
+    /**/
             System.out.print("Enter a number ");
-            x = Keyboard.nextInt   ();
+            x = Keyboard.nextInt   (); //scanner obj is how we get inputs from user
             System.out.println(x  );
             System.out.print("Enter a word ");
-            //word = Keyboard.next   ();
+            word = Keyboard.next   ();
             word = Keyboard.nextLine   ();
     
     /*
@@ -167,7 +172,7 @@ public class ch2notes5 {
     //System.out.println((int)(letter + letter ) );
     
         //System.out.println( (char)101 );
-    /**/
+    /*
             double conversionFactor = (double)x/5; //9/5 logic error -- promotion 5.0
             System.out.println(conversionFactor);
             final int BASE = 32;            // cast is (data type)
