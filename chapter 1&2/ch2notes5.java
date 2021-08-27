@@ -60,8 +60,8 @@ public class ch2notes5 {
             String name = new String("Mike");
             String last = "Hayes"; // string dosnt need new, String is special
     
-            System.out.println(word.length());
-            System.out.println("The name is " + name);
+            //System.out.println(word.length());
+            //System.out.println("The name is " + name);
     /*
             System.out.printf("Name:  %s \t ID: %5d \n", name,id);
             System.out.println( 'a' + 100 ); //97 + 100 = 197, ASCII "a" = 97 chars are ints
@@ -100,13 +100,23 @@ public class ch2notes5 {
             
     
     // page 90 Why do we get this Error???
-    /**/
+    /*
             System.out.print("Enter a number ");
-            x = Keyboard.nextInt   (); //scanner obj is how we get inputs from user
-            System.out.println(x  );
-            System.out.print("Enter a word ");
-            word = Keyboard.next   ();
-            word = Keyboard.nextLine   ();
+            x = Keyboard.nextInt(); //scanner obj is how we get inputs from user
+            System.out.println(x);
+            
+            System.out.println("Enter a word ");
+            word = Keyboard.next(); //reads to the next line
+            //word = Keyboard.nextLine(); //reads to the next white space
+            System.out.println(word);
+            
+            System.out.print("Enter 3 numbers ");
+            
+            x = Keyboard.nextInt();
+            y = Keyboard.nextInt();
+            z = Keyboard.nextInt();
+            
+            System.out.println("Your first number is: " + x + "\nYour second number is: " + y + "\nYour third number is: " + z);
     
     /*
             System.out.print("Enter a decimal");
@@ -119,7 +129,7 @@ public class ch2notes5 {
             System.out.print("Enter a word");
             Keyboard.nextLine();
             word = Keyboard.nextLine();
-            System.out.println(word  );
+            System.out.println(word);
     
     /*      System.out.println( "enter a word" );
             word = Keyboard.nextLine();
@@ -134,33 +144,40 @@ public class ch2notes5 {
     
     /*
     //  Can we make a Math Object? What type of class is Math???
-          Math silly = new Math();
+    //      Math silly = new Math(); don't make objects from static classes pg.88
     
-            System.out.println(Math.abs(-4));
+            System.out.println(Math.abs(-4)); //returns a number
             System.out.println(Math.sqrt (12));
-            System.out.println(Math.pow(2,3));
+            System.out.println(Math.pow(2,3) * 10);
     //      System.out.println(silly.pow(2,4));
     
     
     /*
     //!!!!!!!!!!!! Make a Random Object called generator
             Random generator = new Random();
-    
+            //100 numbers from 0 to 99
             x = generator.nextInt(100);
             System.out.println("the Random number is " + x);
     
-            num =generator.nextDouble()*50;
+            //decimal of 17 digits from 0 -1 exclusive
+            
+            num = generator.nextDouble()*50;
+            System.out.println(num);
+    //                            how many + the range        
+            num = Math.random() * 100 -50;
             System.out.println(num);
     /*
     
     /*
     //----------------------------Know it live it love it p 78
             //word is an oject can do things (NOT len(word))
-            System.out.println(  word.length() );
-            System.out.println(word == word2 );
-            System.out.println( x == 9 );
-            System.out.println(  word.compareTo(word3 ));
-            System.out.println(  word.indexOf("p"));
+            System.out.println(word.length());
+            System.out.println(word == word2); //compares obj == obj/memory address
+            System.out.println(word.equals(word2)); //compares String == String
+            System.out.println(x == 9 );
+            System.out.println(word.compareTo(word3)); //subtracts ACSCII value
+            System.out.println(word3.compareTo(word)); //prints -6
+            System.out.println(word.indexOf("p"));
             
             
     
@@ -172,7 +189,7 @@ public class ch2notes5 {
     //System.out.println((int)(letter + letter ) );
     
         //System.out.println( (char)101 );
-    /*
+    /**/
             double conversionFactor = (double)x/5; //9/5 logic error -- promotion 5.0
             System.out.println(conversionFactor);
             final int BASE = 32;            // cast is (data type)
