@@ -168,7 +168,7 @@ public class ch2notes5 {
             System.out.println(num);
     /*
     
-    /*
+    /**/
     //----------------------------Know it live it love it p 78
             //word is an oject can do things (NOT len(word))
             System.out.println(word.length());
@@ -178,8 +178,12 @@ public class ch2notes5 {
             System.out.println(word.compareTo(word3)); //subtracts ACSCII value
             System.out.println(word3.compareTo(word)); //prints -6
             System.out.println(word.indexOf("p"));
-            
-            
+            //System.out.println();
+            //substring(index_ returns string from index to the end
+            System.out.println(word.substring(word.indexOf("r"))); //slice up the String - substring
+            //substring(start, end);
+            int find = word.indexOf("S");
+            System.out.println(word.substring(find,find + 2));
     
     
     
@@ -189,23 +193,29 @@ public class ch2notes5 {
     //System.out.println((int)(letter + letter ) );
     
         //System.out.println( (char)101 );
-    /**/
-            double conversionFactor = (double)x/5; //9/5 logic error -- promotion 5.0
-            System.out.println(conversionFactor);
+    /*
+    //                                 | int/int gives int result
+    //                                 v
+            x = 9;
+            y = 5;
+            //double conversionFactor = 9.0/5; //(double)x/5; //9/5 logic error -- promotion 5.0
+            double conversionFactor = (double) x/y; //casting
+            System.out.println("conversion factor: " + conversionFactor);
             final int BASE = 32;            // cast is (data type)
             int celsiusTemp = 30;
     
             double fahrenTemp = celsiusTemp * conversionFactor + BASE;
     
             System.out.println("Celsius Temp: " + celsiusTemp );
-            System.out.println("Fahrenheit Equivalent" + fahrenTemp  );
+            System.out.println("Fahrenheit Equivalent " + fahrenTemp  );
+            System.out.println((int)(Math.random()*100));
     
     /*
-        //num = num + num;
-        //num = num - num;
-        //num = num * num;
-        //num = num / num;
-        num = num % 3;
+        num = num + num;
+        num = num - num;
+        num = num * num;
+        num = num / num;
+        num = num % 3; //modulas num/3
         System.out.println(num);
     
     
