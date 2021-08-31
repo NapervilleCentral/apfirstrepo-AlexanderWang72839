@@ -1,17 +1,27 @@
 import java.util.*;
 
 public class hourMinSec {
-    static Scanner Input = new Scanner(System.in);
-    int hour,sec,min;
+    
     
    public static void main(String[] args) {
-       System.out.print("Input seconds: ");
-       int number1 = Input.nextInt();
-       System.out.println(number1);
-       int min = number1 % 60;
-       int hour = number1 % 60;
-       System.out.println("Hours: " + hour);
-       System.out.println("Minutes: " + min);
-       System.out.println("Seconds: " + number1);
+        //declare all variables
+        Scanner Input = new Scanner(System.in);
+        int hour1, min1;
+        int hour, sec, min;
+        int input;
+        
+        //prompts seconds
+        System.out.print("Input seconds: ");
+        input = Input.nextInt();
+        
+        //calculate Hors, minutes, seconds
+        hour = input / 3600;
+        min = (input % 3600) / 60;
+        sec = input % 60;
+        
+        //prints answers
+        System.out.println("Hours: " + hour);
+        System.out.println("Minutes: " + min);
+        System.out.println("Seconds: " + sec);
     }
 }
