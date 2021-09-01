@@ -1,6 +1,6 @@
-public class Test {
+public class test {
     public static void main(String[] args) {
-        System.out.println("An emergency Brodcast");
+        System.out.println("An Emergency Brodcast");
     }
 }
 

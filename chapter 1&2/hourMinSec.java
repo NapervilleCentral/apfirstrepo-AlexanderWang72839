@@ -6,7 +6,6 @@ public class hourMinSec {
    public static void main(String[] args) {
         //declare all variables
         Scanner Input = new Scanner(System.in);
-        int hour1, min1;
         int hour, sec, min;
         int input;
         
@@ -25,3 +24,10 @@ public class hourMinSec {
         System.out.println("Seconds: " + sec);
     }
 }
+
+/*
+Input seconds: 8192
+Hours: 2
+Minutes: 16
+Seconds: 32
+*/

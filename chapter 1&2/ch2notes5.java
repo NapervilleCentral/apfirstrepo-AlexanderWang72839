@@ -79,7 +79,7 @@ public class ch2notes5 {
         System.out.println( );
         System.out.println(  );
     
-    /*
+    /**/
     
             num1 = 23.89765; num2 = 3.4;
     //Your create a NumberFormat and Decimalformat object
