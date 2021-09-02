@@ -19,7 +19,6 @@ public class hourMinSec {
         min = (input % 3600) / 60;
         sec = input % 60;
         
-        //prints answers
         System.out.println("Hours: " + hour);
         System.out.println("Minutes: " + min);
         System.out.println("Seconds: " + sec);

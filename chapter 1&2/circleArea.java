@@ -8,7 +8,3 @@ public class circleArea {
         System.out.println("The circumference is: " + format.format((Radius * 2) * Math.PI));
     }    
 }
-/*
-The area is; 5.44
-The circumference is: 18.85
- */
