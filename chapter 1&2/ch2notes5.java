@@ -184,6 +184,7 @@ public class ch2notes5 {
             //substring(start, end);
             int find = word.indexOf("S");
             System.out.println(word.substring(find,find + 2));
+            
     
     
     
@@ -222,7 +223,11 @@ public class ch2notes5 {
     
     /**/
     
+    
     }//end of main
+    
+    //System.out.println(String.subString(3));
+    //System.out.println(word.twoUpperCase());
 
 }//end of class
 
