@@ -1,3 +1,9 @@
+/**
+ * This tells the time in hours, minutes, and seconds from seconds
+ *
+ * @author Alexander Wang
+ * @version 1.0.0
+ */
 import java.util.*;
 
 public class hourMinSec {

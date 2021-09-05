@@ -1,3 +1,9 @@
+/**
+ * Tells the area and the circumference of a circle
+ *
+ * @author Alexander Wang
+ * @version 1.0.0
+ */
 import java.text.DecimalFormat;
 
 public class circleArea {

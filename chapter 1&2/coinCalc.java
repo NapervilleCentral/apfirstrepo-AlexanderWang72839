@@ -1,3 +1,9 @@
+/**
+ * Converts pennies, nickels, dimes, and quarters into money format
+ *
+ * @author Alexander Wang
+ * @version 1.0.0
+ */
 import java.util.*;
 import java.text.*;
     

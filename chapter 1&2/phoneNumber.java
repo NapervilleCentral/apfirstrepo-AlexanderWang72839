@@ -1,3 +1,9 @@
+/**
+ * Prints a random valid phone number
+ *
+ * @author Alexander Wang
+ * @version 1.0.0
+ */
 import java.util.*;
 
 public class phoneNumber {
@@ -17,3 +23,9 @@ public class phoneNumber {
         System.out.println("-" + exchangeCode + "-" + subscriberNumber);
     }
 }
+
+/*
+Random phone number: 120-267-4514
+
+Random phone number: 642-119-520
+*/
