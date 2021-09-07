@@ -2,7 +2,7 @@
  * Tells the area and the circumference of a circle
  *
  * @author Alexander Wang
- * @version 1.0.0
+ * @version 9/7/21
  */
 import java.text.DecimalFormat;
 

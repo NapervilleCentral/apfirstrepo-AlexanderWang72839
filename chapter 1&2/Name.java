@@ -2,7 +2,7 @@
  * Prompts and reformats first, middle, and last name. 
  *
  * @author Alexander Wang
- * @version 1.0.0
+ * @version 9/7/21
  */
 import java.text.*;
 import java.util.*;
