@@ -13,14 +13,19 @@ public class phoneNumber {
         int areaCode1 = generator.nextInt(8);
         int areaCode2 = generator.nextInt(8);
         int areaCode3 = generator.nextInt(8);
-        int exchangeCode = generator.nextInt(743);
-        int subscriberNumber = generator.nextInt(10000);
+        int exchangeCode1 = generator.nextInt(9);
+        int exchangeCode2 = generator.nextInt(9);
+        int exchangeCode3 = generator.nextInt(9);
+        int subscriberNumber1 = (int)(Math.random() * 10);
+        int subscriberNumber2 = (int)(Math.random() * 10);
+        int subscriberNumber3 = (int)(Math.random() * 10);
+        int subscriberNumber4 = (int)(Math.random() * 10);
 
         //print phone number
         System.out.print("Random phone number: " + areaCode1);
         System.out.print(areaCode2);
         System.out.print(areaCode3);
-        System.out.println("-" + exchangeCode + "-" + subscriberNumber);
+        System.out.println("-" + exchangeCode1 + "-" + subscriberNumber1);
     }
 }
 
