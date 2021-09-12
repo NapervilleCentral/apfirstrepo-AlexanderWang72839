@@ -4,7 +4,6 @@
  * @author Alexander Wang
  * @version 1.0.0
  */
-import java.text.*;
 import java.util.*;
 
 public class Name {
@@ -19,6 +18,8 @@ public class Name {
                 
         System.out.println(first + " " + middle + ".");
         System.out.println(last);
+
+        input.close();
     }
 }
 

@@ -22,6 +22,7 @@ public class coinCalc {
         int quarters = Input.nextInt();
       
         System.out.println(money.format((quarters * 25 + dimes * 10 + nickels * 5 + pennies) / (double)100));
-        
+
+        Input.close();
     }
 }

@@ -62,7 +62,7 @@ public class ch2notes5 {
     
             //System.out.println(word.length());
             //System.out.println("The name is " + name);
-    /*
+    /**/
             System.out.printf("Name:  %s \t ID: %5d \n", name,id);
             System.out.println( 'a' + 100 ); //97 + 100 = 197, ASCII "a" = 97 chars are ints
             System.out.println('a'   );
@@ -79,7 +79,7 @@ public class ch2notes5 {
         System.out.println( );
         System.out.println(  );
     
-    /*
+    /**/
     
             num1 = 23.89765; num2 = 3.4;
     //Your create a NumberFormat and Decimalformat object
@@ -100,7 +100,7 @@ public class ch2notes5 {
             
     
     // page 90 Why do we get this Error???
-    /*
+    /**/ 
             System.out.print("Enter a number ");
             x = Keyboard.nextInt(); //scanner obj is how we get inputs from user
             System.out.println(x);
@@ -118,27 +118,27 @@ public class ch2notes5 {
             
             System.out.println("Your first number is: " + x + "\nYour second number is: " + y + "\nYour third number is: " + z);
     
-    /*
+    /**/
             System.out.print("Enter a decimal");
             num = Keyboard.nextDouble ();
             System.out.println(num  );
     
     
             // what happens when you have both of these together
-    /*
+    /**/
             System.out.print("Enter a word");
             Keyboard.nextLine();
             word = Keyboard.nextLine();
             System.out.println(word);
     
-    /*      System.out.println( "enter a word" );
+    /**/      System.out.println( "enter a word" );
             word = Keyboard.nextLine();
             System.out.println(word  );
-    /*
+    /**/
             System.out.print("Enter a word "  );
             word = Keyboard.next   ();
-            lname = Keyboard.next();
-            System.out.println(word + "\n" + lname  );
+            name = Keyboard.next();
+            System.out.println(word + "\n" + name  );
     
     
     
@@ -152,7 +152,7 @@ public class ch2notes5 {
     //      System.out.println(silly.pow(2,4));
     
     
-    /*
+    /**/
     //!!!!!!!!!!!! Make a Random Object called generator
             Random generator = new Random();
             //100 numbers from 0 to 99
@@ -166,7 +166,7 @@ public class ch2notes5 {
     //                            how many + the range        
             num = Math.random() * 100 -50;
             System.out.println(num);
-    /*
+    /**/
     
     /**/
     //----------------------------Know it live it love it p 78
@@ -194,7 +194,7 @@ public class ch2notes5 {
     //System.out.println((int)(letter + letter ) );
     
         //System.out.println( (char)101 );
-    /*
+    /**/
     //                                 | int/int gives int result
     //                                 v
             x = 9;
@@ -211,7 +211,7 @@ public class ch2notes5 {
             System.out.println("Fahrenheit Equivalent " + fahrenTemp  );
             System.out.println((int)(Math.random()*100));
     
-    /*
+    /**/
         num = num + num;
         num = num - num;
         num = num * num;
@@ -227,7 +227,7 @@ public class ch2notes5 {
     }//end of main
     
     //System.out.println(String.subString(3));
-    //System.out.println(word.twoUpperCase());
+    //System.out.println(word.toUpperCase());
 
 }//end of class
 
