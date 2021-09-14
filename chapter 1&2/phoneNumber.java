@@ -15,15 +15,13 @@ public class phoneNumber {
         int areaCode1 = generator.nextInt(8);
         int areaCode2 = generator.nextInt(8);
         int areaCode3 = generator.nextInt(8);
-        int exchangeCode1 = generator.nextInt(8);
-        int exchangeCode2 = generator.nextInt(5);
-        int exchangeCode3 = generator.nextInt(3);
+        int exchangeCode = generator.nextInt(642) + 100;
         int subscriberNumber = (int)(Math.random() * 10000);
         //print phone number
         System.out.print("Random phone number: " + areaCode1);
         System.out.print(areaCode2);
         System.out.print(areaCode3);
-        System.out.print("-" + exchangeCode1 + exchangeCode2 + exchangeCode3 + "-");
+        System.out.print("-" + exchangeCode + "-");
         System.out.println(fmt.format(subscriberNumber));
     }
 }
@@ -31,5 +29,5 @@ public class phoneNumber {
 /*
 Random phone number: 120-267-4514
 
-Random phone number: 642-119-520
+Random phone number: 642-119-5204
 */
