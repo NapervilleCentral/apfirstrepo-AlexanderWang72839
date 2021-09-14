@@ -9,6 +9,7 @@ import java.util.*;
 
 public class circleArea {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         DecimalFormat format = new DecimalFormat("0.##");
         Scanner input = new Scanner(System.in);
         double Radius = input.nextInt();

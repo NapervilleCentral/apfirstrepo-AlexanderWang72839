@@ -18,6 +18,8 @@ public class Name {
                 
         System.out.println(first + " " + middle + ".");
         System.out.println(last);
+
+        input.close();
     }
 }
 

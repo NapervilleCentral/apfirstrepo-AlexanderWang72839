@@ -22,5 +22,7 @@ public class hourMinSec {
         System.out.println("Hours: " + hour);
         System.out.println("Minutes: " + min);
         System.out.println("Seconds: " + sec);
+
+        Input.close();
     }
 }
