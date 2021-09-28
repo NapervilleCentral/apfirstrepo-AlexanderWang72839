@@ -17,6 +17,7 @@ public class phoneNumber {
         int areaCode3 = generator.nextInt(8);
         int exchangeCode = generator.nextInt(642) + 100;
         int subscriberNumber = (int)(Math.random() * 10000);
+        
         //print phone number
         System.out.print("Random phone number: " + areaCode1);
         System.out.print(areaCode2);
